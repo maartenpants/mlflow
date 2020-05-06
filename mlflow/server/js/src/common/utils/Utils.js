@@ -464,7 +464,7 @@ class Utils {
       lineSmoothness: 1,
       layout: {},
     };
-    const params = qs.parse(search.slice(1, search.length));
+    const params = search && qs.parse(search.slice(1, search.length));
     if (!params) {
       return defaultState;
     }

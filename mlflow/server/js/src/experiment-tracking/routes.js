@@ -16,6 +16,13 @@ class Routes {
   }
 
   static runPageRoute = '/experiments/:experimentId/runs/:runUuid';
+
+  static getRunMetricsPageRoute(experimentId, runUuid) {
+    return `/experiments/${experimentId}/runs/${runUuid}/metrics`;
+  }
+
+  static runMetricsPageRoute = '/experiments/:experimentId/runs/:runUuid/metrics';
+
   /**
    * Get route to the metric plot page
    * @param runUuids - Array of string run IDs to plot

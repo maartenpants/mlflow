@@ -5,6 +5,7 @@ import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import { RunPage } from './RunPage';
 import Routes from '../routes';
 import { MetricPage } from './MetricPage';
+import { RunMetricsPage } from './RunMetricsPage';
 import CompareRunPage from './CompareRunPage';
 import AppErrorBoundary from '../../common/components/error-boundaries/AppErrorBoundary';
 import { connect } from 'react-redux';
@@ -55,6 +56,7 @@ class App extends Component {
               <Route exact path={Routes.rootRoute} component={HomePage} />
               <Route exact path={Routes.experimentPageRoute} component={HomePage} />
               <Route exact path={Routes.runPageRoute} component={RunPage} />
+              <Route exact path={Routes.runMetricsPageRoute} component={RunMetricsPage} />
               <Route exact path={Routes.metricPageRoute} component={MetricPage} />
               <Route exact path={Routes.compareRunPageRoute} component={CompareRunPage} />
               <Route path={Routes.experimentPageSearchRoute} component={HomePage} />
